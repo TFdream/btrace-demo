@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>io.dreamstudio</groupId>
+        <artifactId>btrace-demo</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>btrace-method-interceptor</artifactId>
+
+    <name>${project.artifactId}</name>
+    <url>https://github.com/TFdream</url>
+    <description>btrace-method-interceptor</description>
+
+    <dependencies>
+        <!-- btrace -->
+        <dependency>
+            <groupId>com.sun.btrace</groupId>
+            <artifactId>btrace-agent</artifactId>
+            <version>1.3.11</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>/Users/apple/Downloads/btrace-1.3.11/build/btrace-agent.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.btrace</groupId>
+            <artifactId>btrace-boot</artifactId>
+            <version>1.3.11</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>/Users/apple/Downloads/btrace-1.3.11/build/btrace-boot.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.btrace</groupId>
+            <artifactId>btrace-client</artifactId>
+            <version>1.3.11</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>/Users/apple/Downloads/btrace-1.3.11/build/btrace-client.jar</systemPath>
+        </dependency>
+
+        <!-- logback -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+</project>
